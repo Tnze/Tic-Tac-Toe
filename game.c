@@ -76,7 +76,7 @@ int AI(int *x, int *y, char c)
 {
     if (isSum())
         return 0;
-    int max = -100000;
+    int max = -1;
     for (int i = 0; i < 3; i++)
         for (int j = 0; j < 3; j++)
             if (Board[i][j] == ' ')
@@ -86,7 +86,7 @@ int AI(int *x, int *y, char c)
                 {
                     *x = i;
                     *y = j;
-                    max = 10000;
+                    max = 1;
                 }
 
                 int xx, yy;
